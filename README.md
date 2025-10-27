@@ -44,9 +44,6 @@ flowboard/
 ├── package.json
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## ⚙️ Installation & Setup
@@ -55,16 +52,15 @@ Copy code
    ```bash
    git clone https://github.com/your-username/flowboard.git
    cd flowboard
+   ```
 Install dependencies
-
-bash
-Copy code
+```
 npm install
+```
 Run development server
-
-bash
-Copy code
+```
 npm run dev
+```
 Open your browser → http://localhost:5173
 
 🎨 Theme Customization
@@ -72,8 +68,6 @@ The theme system is defined in src/context/ThemeContext.jsx and color palette in
 
 You can easily change:
 
-js
-Copy code
 light: {
   bg: "#f5f7f4",
   surface: "#ffffff",
@@ -82,6 +76,7 @@ light: {
 accent: {
   green: "#22c55e", // Change for your brand accent
 }
+
 🧠 Tech Stack
 React 18
 
