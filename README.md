@@ -13,7 +13,7 @@ A modern, responsive **task and productivity dashboard** built with **React**, *
 - 🎨 **Custom Colors** — Soothing soft green & dark theme accent palette.  
 - 💨 **Framer Motion Animations** — Smooth transitions and subtle fade-ins.
 
----
+```
 
 ## 🏗️ Project Structure
 
@@ -43,8 +43,8 @@ flowboard/
 │
 ├── package.json
 └── README.md
+```
 
----
 
 ## ⚙️ Installation & Setup
 
@@ -67,7 +67,7 @@ Open your browser → http://localhost:5173
 The theme system is defined in src/context/ThemeContext.jsx and color palette inside tailwind.config.js.
 
 You can easily change:
-
+```
 light: {
   bg: "#f5f7f4",
   surface: "#ffffff",
@@ -76,7 +76,7 @@ light: {
 accent: {
   green: "#22c55e", // Change for your brand accent
 }
-
+```
 🧠 Tech Stack
 React 18
 
