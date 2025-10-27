@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌐 Global Styles */
+html, body, #root {
+  @apply h-full m-0 p-0 font-inter overflow-hidden transition-colors bg-light-bg text-light-text;
+}
+
+/* Dark mode root */
+.dark {
+  @apply bg-dark-bg text-dark-text;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded;
+  background-color: rgba(148,163,184,0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(56,189,248,0.7);
+}
+
+/* Smooth Animations for all elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Typography Helpers */
+h1,h2,h3,h4,h5,h6 {
+  @apply font-semibold tracking-tight text-light-text dark:text-dark-text;
+}
+
+p {
+  @apply text-light-muted dark:text-dark-muted;
+}
+
+/* Buttons */
+button {
+  @apply transition-transform duration-200;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(34,211,238,0.3);
+}
+
+/* Cards */
+.card {
+  @apply bg-light-surface dark:bg-dark-surface border border-gray-200 dark:border-dark-surface rounded-2xl shadow-md hover:shadow-lg transition-colors;
+}
+
+/* Framer Motion fade-in helper */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive text sizing */
+.text-responsive {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* MUI TextField dark mode fix */
+.MuiOutlinedInput-root {
+  color: #1e293b !important; /* light text */
+}
+
+.dark .MuiOutlinedInput-root {
+  color: #f8fafc !important; /* dark text */
+}
+
+.MuiInputLabel-root {
+  color: #64748b !important; /* light muted */
+}
+
+.dark .MuiInputLabel-root {
+  color: #94a3b8 !important; /* dark muted */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #cbd5e1 !important; /* light border */
+}
+
+.dark .MuiOutlinedInput-notchedOutline {
+  border-color: #1e293b !important; /* dark border */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #22c55e !important; /* green accent for focus */
+}
+
